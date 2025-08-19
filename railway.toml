@@ -11,5 +11,5 @@ bun install
 bun build src/frontend.tsx --outdir=static/assets --minify
 npx tailwindcss -i ./static/css/tailwind.css -o ./static/css/tw.css --minify
 """
-start = "python -m gunicorn app:app"
+start = "python app.py"
 
