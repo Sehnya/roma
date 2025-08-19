@@ -8,7 +8,7 @@
     "build": "bun build src/frontend.tsx --outdir=static/assets --public-path=/static/assets --splitting --format=esm --sourcemap --target=browser --minify",
     "css:dev": "tailwindcss -i ./static/css/tailwind.css -o ./static/css/tw.css -w",
     "css:build": "tailwindcss -i ./static/css/tailwind.css -o ./static/css/tw.css --minify",
-    "start": "python3 app.py"
+    "start": "gunicorn app:app"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
