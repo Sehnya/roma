@@ -1,0 +1,14 @@
+[project]
+name = "my-flask-bun-app"
+
+[[services]]
+name = "web"
+port = 5000
+build = """
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+bun install
+bun build src/frontend.tsx --outdir=static/assets --minify
+npx tailwindcss -i ./static/css/tailwind.css -o ./static/css/tw.css --minify
+"""
+start = "gunicorn app:app"

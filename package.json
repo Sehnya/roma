@@ -1,0 +1,31 @@
+{
+  "name": "bun-react-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun build src/frontend.tsx --outdir=static/assets --public-path=/static/assets --splitting --format=esm --sourcemap --target=browser --watch",
+    "build": "bun build src/frontend.tsx --outdir=static/assets --public-path=/static/assets --splitting --format=esm --sourcemap --target=browser --minify",
+    "css:dev": "tailwindcss -i ./static/css/tailwind.css -o ./static/css/tw.css -w",
+    "css:build": "tailwindcss -i ./static/css/tailwind.css -o ./static/css/tw.css --minify",
+    "start": "python3 app.py"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.1",
+    "aos": "^2.3.4",
+    "daisyui": "^5.0.50",
+    "material-ui-popup-state": "^5.3.6",
+    "motion": "^12.23.12",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-router-dom": "^7.8.1",
+    "tailwindcss": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/bun": "latest"
+  }
+}

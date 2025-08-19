@@ -1,0 +1,52 @@
+/* Tailwind v4 + DaisyUI entry stylesheet */
+/* This file is processed by the Tailwind CLI to produce /static/css/tw.css */
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Optional: you can set a default theme using the data-theme attribute on <html> or <body>.
+   Example in HTML: <html data-theme="light"> or "dark" or any DaisyUI theme name. */
+
+/* You can place any app-specific layer overrides below */
+html {
+    scroll-behavior: smooth;
+}
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+gmp-map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.circular-text {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 200px;
+  position: relative;
+  height: 200px;
+  font-weight: bold;
+  color: #fff;
+
+  text-align: center;
+  cursor: pointer;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+}
+
+.circular-text span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 24px;
+  transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+}
