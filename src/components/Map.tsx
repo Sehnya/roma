@@ -35,7 +35,7 @@ function loadGoogleMaps(): Promise<void> {
     script.id = "gmaps-sdk";
     script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(
       key
-    )}&v=weekly&libraries=marker`;
+    )}&v=weekly&libraries=marker&loading=async`;
     script.async = true;
     script.defer = true;
     script.onload = () => resolve();

@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Directions from "./pages/Directions";
 import Reservations from "./pages/Reservations";
-import {Menu} from "./pages/Menu.tsx";
+import {Menu} from "@/pages/Menu";
 import {Events} from "@/pages/Events.tsx";
 
 
