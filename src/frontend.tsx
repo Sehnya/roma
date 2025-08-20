@@ -4,6 +4,7 @@ import App from "./App";
 import Directions from "./pages/Directions";
 import Reservations from "./pages/Reservations";
 import {Menu} from "./pages/Menu.tsx";
+import {Events} from "@/pages/Events.tsx";
 
 
 
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
   { path: "/directions", element: <Directions /> },
   { path: "/reservations", element: <Reservations /> },
   { path: "/menu", element: <Menu /> },
+    {path: "/events", element: <Events />}
 ]);
 
 createRoot(document.getElementById("root")!).render(<RouterProvider router={router} />);
