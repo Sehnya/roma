@@ -29932,153 +29932,12 @@ function Reservations() {
 // src/pages/Menu.tsx
 var jsx_dev_runtime9 = __toESM(require_jsx_dev_runtime(), 1);
 var Menu = () => /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("div", {
-  className: "px-8 py-16 max-w-5xl mx-auto",
+  className: " w-dvw h-dvh bg-black m-0 p-0 overflow-hidden flex flex-col ",
   children: [
-    /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("h2", {
-      className: "text-4xl font-bold mb-12 text-center",
-      children: "Our Menu"
-    }, undefined, false, undefined, this),
-    /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("section", {
-      className: "mb-16",
-      id: "breakfast",
-      children: [
-        /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("h3", {
-          className: "text-2xl font-semibold mb-6 border-b pb-2",
-          children: "Breakfast"
-        }, undefined, false, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("ul", {
-          className: "space-y-4 text-lg",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
-              className: "flex justify-between",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "Avocado Toast"
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "$12"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
-              className: "flex justify-between",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "Classic Omelette"
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "$10"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
-              className: "flex justify-between",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "Fresh Pastries"
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "$8"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this)
-          ]
-        }, undefined, true, undefined, this)
-      ]
-    }, undefined, true, undefined, this),
-    /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("section", {
-      className: "mb-16",
-      children: [
-        /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("h3", {
-          className: "text-2xl font-semibold mb-6 border-b pb-2",
-          children: "Lunch"
-        }, undefined, false, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("ul", {
-          className: "space-y-4 text-lg",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
-              className: "flex justify-between",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "Caprese Salad"
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "$14"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
-              className: "flex justify-between",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "Margherita Pizza"
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "$16"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
-              className: "flex justify-between",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "Seafood Risotto"
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "$22"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this)
-          ]
-        }, undefined, true, undefined, this)
-      ]
-    }, undefined, true, undefined, this),
-    /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("section", {
-      children: [
-        /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("h3", {
-          className: "text-2xl font-semibold mb-6 border-b pb-2",
-          children: "Dinner"
-        }, undefined, false, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("ul", {
-          className: "space-y-4 text-lg",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
-              className: "flex justify-between",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "Filet Mignon"
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "$38"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
-              className: "flex justify-between",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "Lobster Ravioli"
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "$34"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
-              className: "flex justify-between",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "Truffle Gnocchi"
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
-                  children: "$28"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this)
-          ]
-        }, undefined, true, undefined, this)
-      ]
-    }, undefined, true, undefined, this)
+    /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(NavBar, {}, undefined, false, undefined, this),
+    /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("div", {
+      className: "hero min-h-screen w-full  flex flex-col items-center justify-center text-white font-serif p-0"
+    }, undefined, false, undefined, this)
   ]
 }, undefined, true, undefined, this);
 
@@ -30154,5 +30013,5 @@ import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */
   router
 }, undefined, false, undefined, this));
 
-//# debugId=779D172FBB435A4D64756E2164756E21
+//# debugId=ADD9FDD92A3AD46664756E2164756E21
 //# sourceMappingURL=/static/assetsfrontend.js.map
