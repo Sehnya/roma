@@ -41420,6 +41420,7 @@ function App() {
             autoPlay: true,
             loop: true,
             muted: true,
+            playsInline: true,
             className: "w-full h-full object-cover",
             children: /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("source", {
               src: "static/images/video-1.mp4",
@@ -41675,5 +41676,5 @@ import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */
   router
 }, undefined, false, undefined, this));
 
-//# debugId=8E5D15153FB382BC64756E2164756E21
+//# debugId=70036C0F9D7B7F3B64756E2164756E21
 //# sourceMappingURL=/static/assetsfrontend.js.map

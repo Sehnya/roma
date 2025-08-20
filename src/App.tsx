@@ -19,7 +19,7 @@ export function App() {
                data-aos-duration="3000">Savor the Moment. Indulge in the Extraordinary.</p>
             <img src="static/images/Roma-white.png" alt="logo"
                  className=" p-6 w-fit opacity-60 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"/>
-            <video autoPlay loop muted className="w-full h-full object-cover">
+            <video autoPlay loop muted playsInline className="w-full h-full object-cover">
                 <source src="static/images/video-1.mp4" type="video/mp4"/>
             </video>
             <button className=" top-45 backdrop-blur-lg btn text-lg btn-outline text-white font-serif font-extralight antialiased hover:text-black relative">LEARN MORE</button>
