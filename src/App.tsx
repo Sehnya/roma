@@ -2,7 +2,7 @@ import "../static/css/tw.css";
 
 import {NavBar} from "@/components/NavBar.tsx";
 import * as React from "react";
-import { Map } from "src/components/Map.tsx"
+import { Map } from "@/components/Map.tsx"
 import CircularText from 'src/components/CircularText';
 import ScrollVelocity from 'src/components/ScrollVelocity.tsx';
 import {Footer} from "@/components/Footer.tsx";
