@@ -29482,7 +29482,9 @@ var Footer = () => /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("footer", {
           children: [
             "ROMA Restaurant Ltd.",
             /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("br", {}, undefined, false, undefined, this),
-            "Providing the best food since 1999."
+            "Providing the best food since 1999.",
+            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("br", {}, undefined, false, undefined, this),
+            "Made with \uD83D\uDDA4 by Sehnya Edwards"
           ]
         }, undefined, true, undefined, this)
       ]
@@ -29806,7 +29808,73 @@ var App_default = App;
 var jsx_dev_runtime7 = __toESM(require_jsx_dev_runtime(), 1);
 function Directions() {
   return /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
-    children: "Directions"
+    className: "w-full min-h-screen bg-base-100 text-base-content px-6 py-12",
+    children: /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+      className: "max-w-5xl mx-auto space-y-12",
+      children: [
+        /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+          className: "text-center",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("h1", {
+              className: "text-4xl font-bold tracking-tight",
+              children: "Find Us"
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("p", {
+              className: "mt-4 text-lg text-gray-500",
+              children: "Conveniently located in the heart of the city — plan your visit with ease."
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+          className: "w-full h-[500px] rounded-2xl overflow-hidden shadow-lg border border-gray-200",
+          children: /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(Map2, {}, undefined, false, undefined, this)
+        }, undefined, false, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+          className: "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("h2", {
+                  className: "text-2xl font-semibold mb-4",
+                  children: "Our Location"
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("p", {
+                  className: "text-gray-600 leading-relaxed",
+                  children: [
+                    "123 Roma Street ",
+                    /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("br", {}, undefined, false, undefined, this),
+                    "New York, NY 10001 ",
+                    /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("br", {}, undefined, false, undefined, this),
+                    "United States"
+                  ]
+                }, undefined, true, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("p", {
+                  className: "mt-4 text-gray-600",
+                  children: "Easily accessible by public transit, and valet parking is available at our front entrance."
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+              className: "flex flex-col gap-4",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("a", {
+                  href: "https://www.google.com/maps/dir/?api=1&destination=123+Roma+Street+New+York+NY",
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  className: "btn btn-primary w-full",
+                  children: "Get Directions"
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(Link, {
+                  to: "/reservations",
+                  className: "btn btn-outline w-full",
+                  children: "Make a Reservation"
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this)
+          ]
+        }, undefined, true, undefined, this)
+      ]
+    }, undefined, true, undefined, this)
   }, undefined, false, undefined, this);
 }
 
@@ -30086,5 +30154,5 @@ import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */
   router
 }, undefined, false, undefined, this));
 
-//# debugId=DA43AEFC526A6B6064756E2164756E21
+//# debugId=779D172FBB435A4D64756E2164756E21
 //# sourceMappingURL=/static/assetsfrontend.js.map

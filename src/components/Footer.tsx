@@ -19,6 +19,8 @@ export const Footer= () => (
       ROMA Restaurant Ltd.
       <br />
       Providing the best food since 1999.
+        <br/>
+        Made with 🖤 by Sehnya Edwards
     </p>
   </aside>
   <nav>
