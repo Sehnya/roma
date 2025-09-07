@@ -1,6 +1,7 @@
-import "static/css/tw.css";
+import "../../static/css/tw.css";
 import { NavBar } from "@/components/NavBar.tsx";
 import React, { useState } from "react";
+import { mockApi } from "@/services/mockApi";
 
 export default function Reservations() {
   const [form, setForm] = useState({
@@ -19,26 +20,26 @@ export default function Reservations() {
     setStatus(null);
     setSubmitting(true);
     try {
-      const res = await fetch("/api/reservations", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          date: form.date,
-          time: form.time,
-          guests: form.guests,
-          notes: form.notes || undefined,
-        }),
+      const data = await mockApi.createReservation({
+        name: form.name,
+        email: form.email,
+        date: form.date,
+        time: form.time,
+        guests: form.guests,
+        notes: form.notes || undefined,
       });
-      const data = await res.json();
-      if (!res.ok) {
-        throw new Error(data?.error || "Failed to create reservation");
-      }
       setStatus({ type: "ok", message: `Reserved ${data.date} at ${data.time}. See you soon!` });
-      // Keep the date and maybe clear name/email if you want
+      // Clear form after successful reservation
+      setForm({
+        name: "",
+        email: "",
+        date: form.date, // Keep the date
+        time: "",
+        guests: 2,
+        notes: "",
+      });
     } catch (err: any) {
-      setStatus({ type: "error", message: err.message || "Error" });
+      setStatus({ type: "error", message: err.message || "Error creating reservation" });
     } finally {
       setSubmitting(false);
     }

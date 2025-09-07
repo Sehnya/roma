@@ -9,6 +9,10 @@ declare global {
   }
 }
 
+// Environment variables for Vite
+const GMAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || window.__GMAPS_API_KEY;
+const GMAPS_MAP_ID = import.meta.env.VITE_GOOGLE_MAPS_MAP_ID || window.__GMAPS_MAP_ID;
+
 /**
  * Load Google Maps JS API asynchronously.
  */
@@ -23,10 +27,10 @@ function loadGoogleMaps(): Promise<void> {
       return;
     }
 
-    const key = window.__GMAPS_API_KEY;
+    const key = GMAPS_API_KEY;
     if (!key) {
       reject(
-        new Error("Missing Google Maps API key. Ensure the server injects window.__GMAPS_API_KEY.")
+        new Error("Missing Google Maps API key. Please set VITE_GOOGLE_MAPS_API_KEY environment variable.")
       );
       return;
     }
@@ -74,7 +78,7 @@ export const Map: React.FC = () => {
           center,
           zoom: 12,
           disableDefaultUI: false,
-          mapId: window.__GMAPS_MAP_ID ?? undefined,
+          mapId: GMAPS_MAP_ID ?? undefined,
         });
 
         new AdvancedMarkerElement({

@@ -1,14 +1,15 @@
 {
-  "name": "bun-react-template",
-  "version": "0.1.0",
+  "name": "roma-restaurant",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun build src/frontend.tsx --outdir=static/assets --public-path=/static/assets --splitting --format=esm --sourcemap --target=browser --watch",
-    "build": "bun build src/frontend.tsx --outdir=static/assets --public-path=/static/assets --splitting --format=esm --sourcemap --target=browser --minify",
+    "dev": "bun run css:dev & bun build src/frontend.tsx --outdir=dist/static/assets --public-path=/static/assets --splitting --format=esm --sourcemap --target=browser --watch",
+    "build": "mkdir -p dist && cp -r static dist/ && bun build src/frontend.tsx --outdir=dist/static/assets --public-path=/static/assets --splitting --format=esm --sourcemap --target=browser --minify && cp src/index.html dist/",
     "css:dev": "tailwindcss -i ./static/css/tailwind.css -o ./static/css/tw.css -w",
-    "css:build": "tailwindcss -i ./static/css/tailwind.css -o ./static/css/tw.css --minify",
-    "start": "gunicorn app:app"
+    "css:build": "tailwindcss -i ./static/css/tailwind.css -o ./dist/static/css/tw.css --minify",
+    "preview": "bun run build && bun run serve",
+    "serve": "bunx serve dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
