@@ -29,7 +29,7 @@ This guide will help you deploy the Roma restaurant website to Vercel.
 
 2. **Configure Build Settings**
    Vercel will automatically detect the `vercel.json` configuration, but verify:
-   - **Build Command**: `bun run build && bun run css:build`
+   - **Build Command**: `bun run css:build && bun run build`
    - **Output Directory**: `dist`
    - **Install Command**: `bun install`
 
@@ -158,7 +158,7 @@ bun run css:dev
    # Clear cache and rebuild
    rm -rf node_modules dist
    bun install
-   bun run build
+   bun run css:build && bun run build
    ```
 
 2. **CSS Not Loading**
@@ -168,12 +168,21 @@ bun run css:dev
    bun run css:build
    ```
 
-3. **Maps Not Loading**
+3. **Tailwind CSS Command Not Found**
+
+   ```bash
+   # Ensure Tailwind CSS is installed
+   bun add -D tailwindcss @tailwindcss/cli
+   # Then rebuild
+   bun run css:build
+   ```
+
+4. **Maps Not Loading**
    - Check API key in environment variables
    - Verify API restrictions
    - Check browser console for errors
 
-4. **404 Errors on Refresh**
+5. **404 Errors on Refresh**
    - Ensure `vercel.json` has correct rewrites
    - Check SPA routing configuration
 
