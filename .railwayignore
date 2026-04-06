@@ -1,0 +1,7 @@
+.git
+__pycache__
+.cursor
+*.md
+bun.lock
+static/assets
+static/images/video-1.mp4
