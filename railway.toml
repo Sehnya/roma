@@ -1,0 +1,12 @@
+[build]
+builder = "nixpacks"
+buildCommand = "bun install && bun run css:build && bun run build"
+
+[deploy]
+startCommand = "bunx serve dist --listen 3000"
+healthcheckPath = "/"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[[deploy.healthcheckTimeout]]
+seconds = 300
